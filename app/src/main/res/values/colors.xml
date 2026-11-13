@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Cores Principais do Caminho PET -->
+    <color name="bg_creme">#F6F4EE</color>
+    <color name="verde_principal">#0F524B</color>
+    <color name="texto_escuro">#1E1E1E</color>
+    <color name="texto_secundario">#6E6E6E</color>
+    <color name="borda_input">#8E8E8E</color>
+    <color name="borda_card">#E2DEC9</color>
+    <color name="bg_foto_placeholder">#DCD6C8</color>
+
+    <!-- Cores das Etiquetas (Badges) -->
+    <color name="badge_perdido_bg">#F9E3D3</color>
+    <color name="badge_perdido_texto">#7A3E18</color>
+
+    <color name="badge_encontrado_bg">#D9EFEA</color>
+    <color name="badge_encontrado_texto">#0F524B</color>
+
+    <color name="badge_adocao_bg">#F7F0C6</color>
+    <color name="badge_adocao_texto">#5C4D14</color>
+</resources>

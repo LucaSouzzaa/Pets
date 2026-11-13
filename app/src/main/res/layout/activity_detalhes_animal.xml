@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_creme"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Topo: < Detalhes do animal -->
+        <TextView
+            android:id="@+id/tvVoltarDetalhes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="6dp"
+            android:text="&lt;   Detalhes do animal"
+            android:textColor="@color/verde_principal"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Foto do Animal -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/bg_foto_placeholder"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivFotoDetalhe"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_patinhas"
+                    app:tint="#5A5243" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="foto do animal"
+                    android:textColor="#5A5243"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Classificação (Perdido / Encontrado) -->
+        <TextView
+            android:id="@+id/tvBadgeDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_badge_perdido"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="4dp"
+            android:text="Perdido"
+            android:textColor="@color/badge_perdido_texto"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <!-- Nome do Animal -->
+        <TextView
+            android:id="@+id/tvNomeDetalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Thor"
+            android:textColor="@color/texto_escuro"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Bloco com: Espécie, Cor, Porte, Raça e Visto por último -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card_pet"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Linha Espécie -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Espécie"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tvEspecieDetalhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cão"
+                    android:textColor="@color/texto_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/borda_card" />
+
+            <!-- Linha Cor -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cor"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tvCorDetalhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caramelo"
+                    android:textColor="@color/texto_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/borda_card" />
+
+            <!-- Linha Porte -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Porte"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tvPorteDetalhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Médio"
+                    android:textColor="@color/texto_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/borda_card" />
+
+            <!-- Linha Raça -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Raça"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tvRacaDetalhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SRD"
+                    android:textColor="@color/texto_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/borda_card" />
+
+            <!-- Linha Visto por último -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Visto por último"
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tvLocalDetalhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Centro, há 2 dias"
+                    android:textColor="@color/texto_escuro"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Descrição -->
+        <TextView
+            android:id="@+id/tvDescricaoDetalhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Descrição informada pelo tutor..."
+            android:textColor="@color/texto_escuro"
+            android:textSize="15sp" />
+
+        <!-- Bloco Mapa do último local visto -->
+        <LinearLayout
+            android:id="@+id/btnAbrirMapa"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_mapa_placeholder"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_dialog_map"
+                app:tint="@color/verde_principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Mapa do último local visto"
+                android:textColor="@color/verde_principal"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Botão: Entrar em contato com o tutor -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEntrarContato"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_botao_verde"
+            android:text="Entrar em contato com o tutor"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Botão para o dono atualizar o status quando encontrar o pet -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMarcarEncontrado"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_input"
+            android:text="Encontrei meu pet! (Marcar como Encontrado)"
+            android:textAllCaps="false"
+            android:textColor="@color/verde_principal"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

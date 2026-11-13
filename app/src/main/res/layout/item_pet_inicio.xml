@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_card_pet"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="14dp">
+
+    <!-- Quadrado da Foto à Esquerda -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        app:cardBackgroundColor="@color/bg_foto_placeholder"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivFotoPetCard"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_patinhas"
+                app:tint="#5A5243" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="foto"
+                android:textColor="#5A5243"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Informações à Direita -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Badge (Perdido / Encontrado) -->
+        <TextView
+            android:id="@+id/tvStatusBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badge_perdido"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:text="Perdido"
+            android:textColor="@color/badge_perdido_texto"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Nome do Animal -->
+        <TextView
+            android:id="@+id/tvNomePetCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Thor"
+            android:textColor="@color/texto_escuro"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Resumo: Espécie • Cor • Porte -->
+        <TextView
+            android:id="@+id/tvResumoPetCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Cão • caramelo • porte médio"
+            android:textColor="@color/texto_secundario"
+            android:textSize="14sp" />
+
+        <!-- Tempo / Última visualização -->
+        <TextView
+            android:id="@+id/tvTempoPetCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Visto pela última vez há 2 dias"
+            android:textColor="@color/texto_secundario"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

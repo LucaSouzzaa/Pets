@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_localizacao_pin"
+        android:title="Início" />
+    <item
+        android:id="@+id/nav_cadastrar"
+        android:icon="@drawable/ic_adicionar_nav"
+        android:title="Cadastrar" />
+    <item
+        android:id="@+id/nav_adocao"
+        android:icon="@drawable/ic_coracao_vermelho"
+        android:title="Adoção" />
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/ic_chat_balao"
+        android:title="Chat" />
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_perfil_padrao"
+        android:title="Perfil" />
+</menu>

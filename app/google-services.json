@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "761125043709",
+    "project_id": "caminho-pet-a6fb7",
+    "storage_bucket": "caminho-pet-a6fb7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761125043709:android:3fab0397e9ee92421ead94",
+        "android_client_info": {
+          "package_name": "com.example.caminhopet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOqvYXHVCUYd2m2qFthAPzdbYuOrMdlKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
